@@ -1,0 +1,168 @@
+body {
+    min-height: 189vh;
+}
+    .content {
+background-color: #FFF;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin: 20px;
+padding: 20px;
+}
+
+h1 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+p {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+button1 {
+position: relative;
+padding: 10px 20px;
+border-radius: 7px;
+border: 1px solid rgb(255, 0, 0);
+font-size: 14px;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 2px;
+background: rgb(255, 0, 0);
+color: #fff;
+overflow: hidden;
+box-shadow: 0 0 0 0 transparent;
+-webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+}
+
+button1:hover {
+background: rgb(61, 106, 255);
+box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+border: 1px solid rgb(61, 106, 255);
+}
+
+button1:hover::before {
+-webkit-animation: sh02 0.5s 0s linear;
+-moz-animation: sh02 0.5s 0s linear;
+animation: sh02 0.5s 0s linear;
+}
+
+button1::before {
+content: '';
+display: block;
+width: 0px;
+height: 86%;
+position: absolute;
+top: 7%;
+left: 0%;
+opacity: 0;
+background: #fff;
+box-shadow: 0 0 50px 30px #fff;
+-webkit-transform: skewX(-20deg);
+-moz-transform: skewX(-20deg);
+-ms-transform: skewX(-20deg);
+-o-transform: skewX(-20deg);
+transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+from {
+opacity: 0;
+left: 0%;
+}
+
+50% {
+opacity: 1;
+}
+
+to {
+opacity: 0;
+left: 100%;
+}
+}
+
+button1:active {
+box-shadow: 0 0 0 0 transparent;
+-webkit-transition: box-shadow 0.2s ease-in;
+-moz-transition: box-shadow 0.2s ease-in;
+transition: box-shadow 0.2s ease-in;
+}
+
+
+.card {
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+width: 300px;
+position: relative;
+overflow: hidden;
+transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0px 15px 20px rgb(9, 79, 255);
+
+}
+
+.card:before {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 100%;
+height: 10px;
+background-color: rgba(0, 0, 255, 0.3);
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+
+}
+
+.card:hover:before {
+opacity: 1;
+}
+
+.avatar {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.name {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.role {
+font-size: 14px;
+color: #888;
+}
+
+
+h2 {
+font-size: 20px;
+margin-bottom: 10px;
+color: #007AFF;
+}
+
+h3 {
+font-size: 18px;
+margin-bottom: 5px;
+}
+.button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: AUTO; /* Imposta l'altezza del container al 100% della viewport, per centrare verticalmente */
+}
